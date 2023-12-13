@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>BEAUTY SALON</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+  
+        body {
+            padding-top: 56px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+        header {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        section {
+            margin: 40px 0;
+        }
+        h1, h2, h3, h4, h5 {
+            color: #007BFF;
+        }
+        a {
+            color: #007BFF;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .navbar-brand {
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-brand:hover {
+            color: #0056b3;
+        }
+        .navbar-nav .nav-link {
+            color: #343a40;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #007BFF;
+        }
+        header {
+            background-image: url('header-image.jpg');
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #007BFF;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .input-group-prepend .input-group-text {
+            background-color: #007BFF;
+            color: #fff;
+            border: 1px solid #007BFF;
+        }
+        .btn-primary {
+            background-color: #007BFF;
+            border-color: #007BFF;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+        }
+        /* Additional styling for the map section */
+        #maps {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">BEAUTY SALON</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profil">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">PRODUK KECANTIKAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header style="background-image: url('header-image.jpg')" id="home">
+      <div class="container">
+        <h1 class="display-4">WELCOME TO BEAUTY SALON</h1>
+        <p class="lead">provides a variety of beauty treatments</p>
+      </div>
+    </header>
+
+    <!-- Profil Nama UMKM -->
+    <section class="container" id="profil">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="GANBAR TEMPAT.jpg"
+            alt="Profil Foto"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2>BEAUTY SALON</h2>
+          <p class="lead">
+            A beauty salon is a special place to care for women's beauty, including hair, face, skin, nails and so on. Beauty salons are facilities for beautifying oneself in a relatively quick time. 16 Salon activities are divided into 3 parts, namely hair, face and body.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk/Jasa Image Slider -->
+    <section class="container" id="produk">
+      <h2>Produk kecantikan</h2>
+      <div id="image-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="gambar 4.jpg"
+              class="d-block w-100"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="gambar 3.jpg"
+              class="d-block w-100"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="gambar 6.jpg"
+              class="d-block w-100"
+              alt="Slide 3"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#image-slider"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#image-slider"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Form dan Table -->
+    <section class="container" id="kontak">
+      <h2>Hubungi Kami</h2>
+      <form>
+        <!-- Form Booking -->
+<section class="container" id="kontak">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nama">Nama:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                </div>
+                <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda" required></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+    </form>
+</section>
+
+
+      <!-- Tabel Harga -->
+      <h3 class="mt-4">Tabel Harga</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Paket</th>
+              <th>Harga</th>
+              <th>Waktu</th>
+              <th>Syarat dan Ketentuan</th>
+              <th>Deskripsi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paket A</td>
+              <td>Rp 1.000.000</td>
+              <td>1 bulan</td>
+              <td>Syarat A</td>
+              <td>Deskripsi A</td>
+            </tr>
+            <!-- Tambahkan baris tabel lainnya -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<!-- Tabel Promosi -->
+<section class="container" id="promosi">
+    <h2>Tabel Promosi</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Paket</th>
+                    <th>Harga</th>
+                    <th>Deskripsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paket spa</td>
+                    <td>Rp 10.000.000</td>
+                    
+                    <td>Deskripsi :SPA merupakan perawatan badan yang dilakukan dari ujung rambut hingga ujung kaki. </td>
+                </tr>
+                <tr>
+                    <td>Paket manicure and pedicure</td>
+                    <td>Rp 18.000.000</td>
+                    <td>Deskripsi :a series of treatments that aim to clean and beautify fingernails and the skin around them, while pedicure is a treatment for toenails.</td>
+                </tr>
+                <tr>
+                    <td>Paket facial</td>
+                    <td>Rp 20.000.000</td>
+                    <td>Deskripsi :Facial is a treatment method for facial skin that includes exfoliating the skin and removing dirt and dead skin cells. That way, the facial appearance becomes fresher, smoother and brighter. This skin care procedure is performed by a certified esthetician. </td>
+                 
+                </tr>
+                <tr>
+                    <td>Paket Chemical peeling</td>
+                    <td>Rp 2.500.000</td>
+                    <td>Deskripsi : Chemical Peeling is a skin care procedure by applying a special chemical liquid to the skin to lift/exfoliate the outermost layer of skin to help the growth of new skin cells. Chemical peels are often used to treat wrinkles, skin discoloration/facial spots, and acne scars.</td>
+                </tr>
+             </tbody>
+        </table>
+    </div>
+</section>
+
+
+    <!-- Peta Google Maps -->
+    <section class="container" id="maps">
+      <h2>Lokasi Kami</h2>
+      <div id="google-maps"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6890104826787!2d106.82688961529967!3d-6.208760850728336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a02c9750df64d%3A0x97043f5c12990f1a!2sExample%20Location!5e0!3m2!1sen!2sid!4v1562867247409!5m2!1sen!2sid" frameborder="0"></iframe>
+    </section><!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2023 BEAUTY SALON -Hak Cipta Dilindungi.</p>
+    </footer>
+    
+
+
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Maps API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+    <script>
+
+      <!-- Bootstrap JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Font Awesome Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+<script>
+    // Inisialisasi peta Google Maps
+    function initMap() {
+        var myLatLng = {lat: -6.2088, lng: 106.8456}; // Ganti dengan koordinat lokasi UMKM Anda
+        var map = new google.maps.Map(document.getElementById('google-maps'), {
+            zoom: 15,
+            center: myLatLng
+        });
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Lokasi Nama UMKM'
+        });
+    }
+</script>
+  </body>
+</html>
